@@ -1,0 +1,14 @@
+.test li.active {
+  width: 100%;
+  background-color: red !important;
+}
+
+.test li {
+  color: blue;
+}
+
+ng2-input-autocomplete {
+  display: block;
+  z-index: 9999;
+  position: absolute;
+}

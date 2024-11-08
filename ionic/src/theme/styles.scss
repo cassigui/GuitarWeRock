@@ -1,0 +1,54 @@
+.increase_size {
+    margin: 10px;
+}
+
+button:hover,
+button:hover::after {
+    transition: .3s !important;
+}
+
+.color-item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.br-50 {
+    border-radius: 50% !important;
+    --border-radius: 50% !important;
+}
+
+.close-btn {
+    opacity: 0.8
+}
+
+ion-card {
+    border-radius: 20px;
+}
+
+div.input-light {
+    cursor: pointer;
+}
+
+ion-button:hover {
+    --color: #fff;
+    color: #fff;
+    transition: all .2s ease-out;
+    --transition: all .2s ease-out;
+}
+
+.text-medium {
+    color: var(--ion-color-medium);
+}
+
+.text-success {
+    color: var(--ion-color-success);
+}
+
+.text-danger {
+    color: var(--ion-color-danger);
+}
+
+.background-red{
+    --background: #f08080 !important;
+}

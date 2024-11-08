@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-toolbar mode="ios">
+        <ion-menu-button mode="ios" slot="start"></ion-menu-button>
+        <ion-title>Configurações</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-row>
+        <ion-col class="ion-no-padding">
+            <div>
+                <ion-card class="m0" color="white" mode="ios">
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col>
+                                <ion-label class="fw-600" color="medium"
+                                    >Exemplo</ion-label
+                                >
+                                <input
+                                    type="text"
+                                    class="input-light"
+                                    mask="00"
+                                    suffix=" Dias"
+                                    placeholder="Dias"
+                                    [(ngModel)]="config.exemplo"
+                                />
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-label class="fw-600" color="medium"
+                                    >Scripts head</ion-label
+                                >
+                                <ion-textarea
+                                    class="input-light"
+                                    rows="20"
+                                    [(ngModel)]="config.scripts_head"
+                                >
+                                </ion-textarea>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-label class="fw-600" color="medium"
+                                    >Scripts começo do body</ion-label
+                                >
+                                <ion-textarea
+                                    class="input-light"
+                                    rows="20"
+                                    [(ngModel)]="config.scripts_body_start"
+                                >
+                                </ion-textarea>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-label class="fw-600" color="medium"
+                                    >Scripts final do body</ion-label
+                                >
+                                <ion-textarea
+                                    class="input-light"
+                                    rows="20"
+                                    [(ngModel)]="config.scripts_body_end"
+                                >
+                                </ion-textarea>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size-sm="4">
+                                <ion-button
+                                    (click)="save()"
+                                    expand="full"
+                                    shape="round"
+                                    mode="ios"
+                                    color="success"
+                                >
+                                    Salvar
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+        </ion-col>
+    </ion-row>
+</ion-content>
