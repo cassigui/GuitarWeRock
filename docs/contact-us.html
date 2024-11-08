@@ -38,7 +38,7 @@
         <span class="loader"></span>
     </div>
 
-    <header id="inicio">
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -46,12 +46,17 @@
                         <nav class="navbar navbar-expand-lg w-100">
 
                             <!-- Menu Hamburger -->
-                            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                             <div class="d-flex justify-content-between w-100 align-items-center d-lg-none">
+                                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="ri-menu-3-line"></i>
                             </button>
-
+                            <a href="index.html" class="cr-logo">
+                                <img src="assets/img/logo/logo.svg" alt="logo" class="logo">
+                                <img src="assets/img/logo/dark-logo.png" alt="logo" class="dark-logo">
+                            </a>
+                             </div>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav w-100 justify-content-between">
@@ -63,13 +68,16 @@
                                     </div>
                                     <div class="d-flex gap-3">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html">Início</a>
+                                            <a class="nav-link" href="#inicio">Início</a>
                                         </li>
-                                        <li class="nav-item dropdown">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="shop-full-width.html">Produtos</a>
                                         </li>
-                                        <li class="nav-item dropdown">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html" class="nav-link actived">Contate-nos</a>
                                         </li>
                                     </div>
                                 </ul>
@@ -80,7 +88,6 @@
             </div>
         </div>
     </header>
-
     <!-- Mobile menu -->
     <div class="cr-sidebar-overlay"></div>
     <div id="cr_mobile_menu" class="cr-side-cart cr-mobile-menu">
@@ -91,14 +98,17 @@
         <div class="cr-menu-inner">
             <div class="cr-menu-content">
                 <ul>
-                    <li class="dropdown drop-list">
-                        <a href="index.html">Pagina Incial</a>
+                    <li>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="dropdown drop-list">
-                        <a href="shop-full-width.html" class="dropdown-list">Produtos</a>
+                    <li>
+                        <a class="nav-link" href="shop-full-width.html">Produtos</a>
                     </li>
-                    <li class="dropdown drop-list">
-                        <a href="index.html#sobre" class="dropdown-list">Sobre Nós</a>
+                    <li>
+                        <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a class="nav-link actived" href="index.html#sobre">Contate-nos</a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +116,7 @@
     </div>
 
     <!-- Contact -->
-    <section class="section-Contact padding-tb-100">
+    <section class="section-Contact section-config">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -126,9 +136,9 @@
                         </div>
                         <div class="cr-info-content">
                             <h4 class="heading">Contato</h4>
-                            <p><a href="javascript:void(0)"><i class="ri-phone-line"></i> &nbsp; (+55) 9876X-XXXX</a>
+                            <p><a href="javascript:void(0)">(+55) 9876X-XXXX</a>
                             </p>
-                            <p><a href="javascript:void(0)"><i class="ri-phone-line"></i> &nbsp; (+55) 98764-XXXX</a>
+                            <p><a href="javascript:void(0)">(+55) 98764-XXXX</a>
                             </p>
                         </div>
                     </div>
@@ -140,10 +150,12 @@
                             <i class="ri-mail-line"></i>
                         </div>
                         <div class="cr-info-content">
-                            <h4 class="heading">Email & Site</h4>
-                            <p><a href="javascript:void(0)"><i class="ri-mail-line"></i> &nbsp;
-                                    emailexemplo@gmail.com</a></p>
-                            <p><a href="javascript:void(0)"><i class="ri-globe-line"></i> &nbsp; www.meusite.com</a>
+                            <h4 class="heading">Email</h4>
+                            <p><a href="javascript:void(0)">
+                                    suporte@gmail.com</a></p>
+                            </p>
+                            <p><a href="javascript:void(0)">
+                                    contato@gmail.com</a></p>
                             </p>
                         </div>
                     </div>
@@ -155,7 +167,7 @@
                         </div>
                         <div class="cr-info-content">
                             <h4 class="heading">Endereço</h4>
-                            <p><a href="javascript:void(0)"><i class="ri-map-pin-line"></i> &nbsp; 140 Ruami Moraes
+                            <p><a href="javascript:void(0)">140 Ruami Moraes
                                     Filho,
                                     987 - Salvador - MA, 40352, Brasil.</a></p>
                         </div>
@@ -329,88 +341,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn rounded text-white" id="btnModal" data-dismiss="modal">Ok</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Side-tool -->
-    <div class="cr-tool-overlay"></div>
-    <div class="cr-tool">
-        <div class="cr-tool-btn">
-            <a href="javascript:void(0)" class="btn-cr-tool result-placeholder">
-                <i class="ri-settings-line"></i>
-            </a>
-            <div class="color-variant">
-                <div class="cr-bar-title">
-                    <h6>Tools</h6>
-                    <a href="javascript:void(0)" class="close-tools">
-                        <i class="ri-close-line"></i>
-                    </a>
-                </div>
-                <div class="cr-tools-detail">
-                    <div class="heading">
-                        <h2>Select Color</h2>
-                    </div>
-                    <ul class="cr-color">
-                        <li class="colors c1 active-colors">
-                        </li>
-                        <li class="colors c2">
-                        </li>
-                        <li class="colors c3">
-                        </li>
-                        <li class="colors c4">
-                        </li>
-                        <li class="colors c5">
-                        </li>
-                        <li class="colors c6">
-                        </li>
-                        <li class="colors c7">
-                        </li>
-                        <li class="colors c8">
-                        </li>
-                        <li class="colors c9">
-                        </li>
-                        <li class="colors c10">
-                        </li>
-                    </ul>
-                </div>
-                <div class="cr-tools-detail">
-                    <div class="heading">
-                        <h2>Dark mode</h2>
-                    </div>
-                    <ul class="dark-mode">
-                        <li class="dark">
-                        </li>
-                        <li class="white active-dark-mode">
-                        </li>
-                    </ul>
-                </div>
-                <div class="cr-tools-detail">
-                    <div class="heading">
-                        <h2>Backgrounds</h2>
-                    </div>
-                    <ul class="bg-panel">
-                        <li class="bg-1">
-                            <img src="assets/img/shape/bg-shape-1.png" alt="bg-shape-1">
-                        </li>
-                        <li class="bg-2">
-                            <img src="assets/img/shape/bg-shape-2.png" alt="bg-shape-2">
-                        </li>
-                        <li class="bg-3">
-                            <img src="assets/img/shape/bg-shape-3.png" alt="bg-shape-3">
-                        </li>
-                        <li class="bg-4">
-                            <img src="assets/img/shape/bg-shape-4.png" alt="bg-shape-4">
-                        </li>
-                        <li class="bg-5">
-                            <img src="assets/img/shape/bg-shape-5.png" alt="bg-shape-5">
-                        </li>
-                        <li class="bg-6 active-bg-panel">
-                            <img src="assets/img/shape/bg-shape-6.png" alt="bg-shape-6">
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

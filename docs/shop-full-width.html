@@ -38,7 +38,7 @@
         <span class="loader"></span>
     </div>
 
-    <header id="inicio">
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -46,12 +46,17 @@
                         <nav class="navbar navbar-expand-lg w-100">
 
                             <!-- Menu Hamburger -->
-                            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                             <div class="d-flex justify-content-between w-100 align-items-center d-lg-none">
+                                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="ri-menu-3-line"></i>
                             </button>
-
+                            <a href="index.html" class="cr-logo">
+                                <img src="assets/img/logo/logo.svg" alt="logo" class="logo">
+                                <img src="assets/img/logo/dark-logo.png" alt="logo" class="dark-logo">
+                            </a>
+                             </div>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav w-100 justify-content-between">
@@ -65,7 +70,10 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="index.html">Início</a>
                                         </li>
-                                        <li class="nav-item dropdown">
+                                        <li>
+                                            <a class="nav-link actived" href="shop-full-width.html">Produtos</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
                                         </li>
                                         <li class="nav-item">
@@ -92,10 +100,13 @@
             <div class="cr-menu-content">
                 <ul>
                     <li class="dropdown drop-list">
-                        <a href="index.html">Pagina Incial</a>
+                        <a href="index.html">Incio</a>
                     </li>
                     <li class="dropdown drop-list">
-                        <a href="index.html#sobre" class="dropdown-list">Sobre Nós</a>
+                        <a class="nav-link actived">Produtos</a>
+                    </li>   
+                    <li class="dropdown drop-list">
+                        <a href="index.html#sobre" class="nav-link">Sobre Nós</a>
                     </li>
                     <li class="dropdown drop-list">
                         <a href="contact-us.html">Contate-nos</a>
@@ -106,7 +117,7 @@
     </div>
 
     <!-- Shop -->
-    <section class="section-shop padding-tb-100">
+    <section class="section-shop section-config">
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
@@ -137,10 +148,8 @@
                                         <a href="shop-left-sidebar.html">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=1" class="title">Guitarra def</a>
-                                    <p class="text">Instrumento com som robusto e design inovador, perfeito para músicos
-                                        de todos os níveis</p>
                                     <p class="cr-price"><span class="new-price">R$120,25</span> <span
-                                            class="old-price">$123,25</span></p>
+                                            class="old-price">R$123,25</span></p>
                                 </div>
                             </div>
                         </div>
@@ -156,8 +165,8 @@
                                         <a href="product-full-width.html?id=9">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=9" class="title">Teclado</a>
-                                    <p class="cr-price"><span class="new-price">$145</span> <span
-                                            class="old-price">$150</span></p>
+                                    <p class="cr-price"><span class="new-price">R$145,00</span> <span
+                                            class="old-price">R$150,00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -173,8 +182,8 @@
                                         <a href="product-full-width.html?id=2">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=2" class="title">Guitarra</a>
-                                    <p class="cr-price"><span class="new-price">$120.25</span> <span
-                                            class="old-price">$123.25</span></p>
+                                    <p class="cr-price"><span class="new-price">R$120,25</span> <span
+                                            class="old-price">R$123,25</span></p>
                                 </div>
                             </div>
                         </div>
@@ -190,8 +199,8 @@
                                         <a href="product-full-width.html?id=3">Equipamentos de Som</a>
                                     </div>
                                     <a href="product-full-width.html?id=3" class="title">Fone de Ouvido</a>
-                                    <p class="cr-price"><span class="new-price">$50.30</span> <span
-                                            class="old-price">$72.60</span></p>
+                                    <p class="cr-price"><span class="new-price">R$50,30</span> <span
+                                            class="old-price">R$72,60</span></p>
                                 </div>
                             </div>
                         </div>
@@ -207,8 +216,8 @@
                                         <a href="product-full-width.html?id=10">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=10" class="title">Caixa de Som</a>
-                                    <p class="cr-price"><span class="new-price">$120.25</span> <span
-                                            class="old-price">$123.25</span></p>
+                                    <p class="cr-price"><span class="new-price">R$120,25</span> <span
+                                            class="old-price">R$123,25</span></p>
                                 </div>
                             </div>
                         </div>
@@ -224,8 +233,8 @@
                                         <a href="product-full-width.html?id=17">Acessórios</a>
                                     </div>
                                     <a href="product-full-width.html?id=17" class="title">Palhetas</a>
-                                    <p class="cr-price"><span class="new-price">$20</span> <span
-                                            class="old-price">$22.10</span></p>
+                                    <p class="cr-price"><span class="new-price">R$20,00</span> <span
+                                            class="old-price">R$22,00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -241,8 +250,8 @@
                                         <a href="product-full-width.html?id=13">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=13" class="title">Caixa de Som</a>
-                                    <p class="cr-price"><span class="new-price">$20</span> <span
-                                            class="old-price">$22.10</span></p>
+                                    <p class="cr-price"><span class="new-price">R$20,00</span> <span
+                                            class="old-price">R$22,00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -258,8 +267,8 @@
                                         <a href="product-full-width.html?id=11">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=11" class="title">Violão</a>
-                                    <p class="cr-price"><span class="new-price">$20</span> <span
-                                            class="old-price">$22.10</span></p>
+                                    <p class="cr-price"><span class="new-price">R$20,00</span> <span
+                                            class="old-price">R$22,10</span></p>
                                 </div>
                             </div>
                         </div>
@@ -275,8 +284,8 @@
                                         <a href="product-full-width.html?id=12">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=12" class="title">Guitarra xyz</a>
-                                    <p class="cr-price"><span class="new-price">$20</span> <span
-                                            class="old-price">$22.10</span></p>
+                                    <p class="cr-price"><span class="new-price">R$20,00</span> <span
+                                            class="old-price">R$22,10</span></p>
                                 </div>
                             </div>
                         </div>
@@ -292,8 +301,8 @@
                                         <a href="product-full-width.html?id=1">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=1" class="title">Guitarra def</a>
-                                    <p class="cr-price"><span class="new-price">$120.25</span> <span
-                                            class="old-price">$123.25</span></p>
+                                    <p class="cr-price"><span class="new-price">R$120,25</span> <span
+                                            class="old-price">R$123,25</span></p>
                                 </div>
                             </div>
                         </div>
@@ -309,8 +318,8 @@
                                         <a href="product-full-width.html?id=9">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=9" class="title">Teclado Elétrico</a>
-                                    <p class="cr-price"><span class="new-price">$145</span> <span
-                                            class="old-price">$150</span></p>
+                                    <p class="cr-price"><span class="new-price">R$145,00</span> <span
+                                            class="old-price">R$150,00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -326,8 +335,8 @@
                                         <a href="product-full-width.html?id=2">Instrumentos</a>
                                     </div>
                                     <a href="product-full-width.html?id=2" class="title">Guitarra abc</a>
-                                    <p class="cr-price"><span class="new-price">$120.25</span> <span
-                                            class="old-price">$123.25</span></p>
+                                    <p class="cr-price"><span class="new-price">R$120,25</span> <span
+                                            class="old-price">R$123,25</span></p>
                                 </div>
                             </div>
                         </div>
@@ -452,95 +461,6 @@
         </div>
     </a>
 
-    <!-- Cart -->
-    <div class="cr-cart-overlay"></div>
-    <div class="cr-cart-view">
-        <div class="cr-cart-inner">
-            <div class="cr-cart-top">
-                <div class="cr-cart-title">
-                    <h6>My Cart</h6>
-                    <button type="button" class="close-cart">×</button>
-                </div>
-                <ul class="crcart-pro-items">
-                    <li>
-                        <a href="product-left-sidebar.html" class="crside_pro_img"><img src="assets/img/product/4.jpg"
-                                alt="product-1"></a>
-                        <div class="cr-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">Fresh Pomegranate</a>
-                            <span class="cart-price"><span>$56.00</span> x 1kg</span>
-                            <div class="cr-cart-qty">
-                                <div class="cart-qty-plus-minus">
-                                    <button type="button" class="plus">+</button>
-                                    <input type="text" placeholder="." value="1" minlength="1" maxlength="20"
-                                        class="quantity">
-                                    <button type="button" class="minus">-</button>
-                                </div>
-                            </div>
-                            <a href="javascript:void(0)" class="remove">×</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product-left-sidebar.html" class="crside_pro_img"><img src="assets/img/product/2.jpg"
-                                alt="product-2"></a>
-                        <div class="cr-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">Green Apples</a>
-                            <span class="cart-price"><span>$75.00</span> x 1kg</span>
-                            <div class="cr-cart-qty">
-                                <div class="cart-qty-plus-minus">
-                                    <button type="button" class="plus">+</button>
-                                    <input type="text" placeholder="." value="1" minlength="1" maxlength="20"
-                                        class="quantity">
-                                    <button type="button" class="minus">-</button>
-                                </div>
-                            </div>
-                            <a href="javascript:void(0)" class="remove">×</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product-left-sidebar.html" class="crside_pro_img"><img src="assets/img/product/3.jpg"
-                                alt="product-3"></a>
-                        <div class="cr-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">Watermelon - Small</a>
-                            <span class="cart-price"><span>$48.00</span> x 5kg</span>
-                            <div class="cr-cart-qty">
-                                <div class="cart-qty-plus-minus">
-                                    <button type="button" class="plus">+</button>
-                                    <input type="text" placeholder="." value="1" minlength="1" maxlength="20"
-                                        class="quantity">
-                                    <button type="button" class="minus">-</button>
-                                </div>
-                            </div>
-                            <a href="javascript:void(0)" class="remove">×</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="cr-cart-bottom">
-                <div class="cart-sub-total">
-                    <table class="table cart-table">
-                        <tbody>
-                            <tr>
-                                <td class="text-left">Sub-Total :</td>
-                                <td class="text-right">$300.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">VAT (20%) :</td>
-                                <td class="text-right">$60.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">Total :</td>
-                                <td class="text-right primary-color">$360.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="cart_btn">
-                    <a href="cart.html" class="cr-button">View Cart</a>
-                    <a href="checkout.html" class="cr-btn-secondary">Checkout</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Vendor Custom -->
     <script src="assets/js/vendor/jquery-3.6.4.min.js"></script>
