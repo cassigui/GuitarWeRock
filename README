@@ -1,0 +1,14 @@
+/** COMO UTILIZAR **/
+
+1. BANCO DE DADOS
+O script do banco de dados está localizado em "docs/bd/base_db.sql", rode ele em seu servidor local para que ele crie o banco de dados base que alimentará o projeto base
+
+2.LARAVEL
+Abra o terminal na pasta laravel do projeto e em seguida rode o seguinte comando no terminal: composer i 
+O intuito desse comando é instalar as dependências que iremos usar no projeto base.
+Depois disso copie e cole o arquivo .env.example e depois renomeie ele para .env, verifique se as informações estão corretas.
+Por fim no mesmo terminal rode o comando: php artisan key:generate
+
+3.IONIC
+Abra o terminal na pasta ionic do projeto e em seguida rode o seguinte comando no terminal: npm i
+Depois vá para ionic/src/environment.ts e modifique o api_url para a url que configurou no seu mamp/laragon
