@@ -1,0 +1,123 @@
+<ion-content fullscreen class="bg-white">
+    <ion-item class="close-fake" mode="ios" color="primary">
+        Detalhes do Cliente
+        <ion-button mode="ios" (click)="close()" fill="clear" color="light" slot="end">
+            <ion-icon name="close" slot="end"></ion-icon>
+            <small>fechar</small>
+        </ion-button>
+    </ion-item>
+
+    <ion-row class="p10">
+        <ion-col class="mb-15" size="4">
+            <ion-label class="fw-600" color="medium">Clientes</ion-label>
+            <div class="input-light">
+                <span>{{ contract.customers[0].name }}</span>
+            </div>
+        </ion-col>
+
+        <ion-col class="mb-15" size="4">
+            <ion-label class="fw-600" color="medium">Situação</ion-label>
+            <div class="input-light">
+                <span>
+                    {{ contract.contract_state.name }}
+                </span>
+            </div>
+        </ion-col>
+
+        <ion-col class="mb-15" size="4">
+            <ion-label class="fw-600" color="medium">Tipo</ion-label>
+            <div class="input-light">
+                <span>
+                    {{ contract.contract_type.name }}
+                </span>
+            </div>
+        </ion-col>
+
+        <ion-col class="mb-15" size="6">
+            <ion-label class="fw-600" color="medium">Índice de renovação</ion-label>
+            <div class="input-light">
+                <span>
+                    {{ contract.renovation.name }}
+                </span>
+            </div>
+        </ion-col>
+
+        <ion-col class="mb-15" size="6">
+            <ion-label class="fw-600" color="medium">Valor</ion-label>
+            <div class="input-light">
+                <span>
+                    R$ {{ contract.value }}
+                </span>
+            </div>
+        </ion-col>
+
+        <ion-col class="mb-15" size="6">
+            <ion-label class="fw-600" color="medium">Data de início</ion-label>
+            <div class="input-light">
+                <span>
+                    {{ contract.start_date | date: 'dd/MM/yyyy' }}
+                </span>
+            </div>
+        </ion-col>
+
+        <ion-col class="mb-15" size="6">
+            <ion-label class="fw-600" color="medium">Data de final</ion-label>
+            <div class="input-light">
+                <span>
+                    {{ contract.end_date | date: 'dd/MM/yyyy' }}
+                </span>
+            </div>
+        </ion-col>
+
+        <ion-row *ngFor="let revenue of contract.revenues; let i = index" class="mb-10 division">
+            <ion-row size="12" class="mt-5">
+                <ion-col>
+                    <h4 class="text-medium">Faturamento</h4>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="4">
+                    <ion-label class="fw-600" color="medium">Recorrente</ion-label>
+                    <div class="input-light">
+                        <span> {{ revenue.no_ending_reccurency ? 'Sim' : 'Não' }} </span>
+                    </div>
+                </ion-col>
+
+                <ion-col size="8">
+                    <ion-label class="fw-600" color="medium">Descrição *</ion-label>
+                    <div class="input-light">
+                        <span> {{ revenue.description }} </span>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="6">
+                    <ion-label class="fw-600" color="medium">Metodos de pagamento *</ion-label>
+                    <div class="input-light">
+                        <span>
+                            {{ revenue.payment_method.name }}
+                        </span>
+                    </div>
+                </ion-col>
+                <ion-col size="6">
+                    <ion-label class="fw-600" color="medium">Parcelas *</ion-label>
+                    <div class="input-light">
+                        <span> {{ revenue.parcel }} </span>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-row>
+
+        <ion-col class="mb-15" size="12">
+            <ion-label class="fw-600" color="medium">Observações</ion-label>
+            <div class="input-light">
+                <span>
+                    {{ contract.observations }}
+                </span>
+            </div>
+        </ion-col>
+
+    </ion-row>
+</ion-content>

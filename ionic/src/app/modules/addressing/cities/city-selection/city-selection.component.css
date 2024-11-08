@@ -1,0 +1,10 @@
+.darksuccess {
+    cursor: pointer;
+    --background: green !important;
+    color: white !important;
+}
+
+.disabled {
+    color: white !important;
+    --background: grey;
+}
